@@ -4,6 +4,8 @@ This is using in memory storage and no databse is used.
 node version: v7.4.0
 
 Node API:
+1) Make sure node js is installed
+2) Traverse to folder directory using a commandline and execute 'npm start'
 
 **LOGIN (user login token in header for all subsequent api calls)**
 
