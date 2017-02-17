@@ -5,7 +5,7 @@ node version: v7.4.0
 
 Node API:
 
-LOGIN (user login token in header for all subsequent api calls)
+**LOGIN (user login token in header for all subsequent api calls)**
 
 #####POST - http://localhost:3000/api/login
 
@@ -14,7 +14,7 @@ LOGIN (user login token in header for all subsequent api calls)
             "password":"123456"
          }
 
-GET CONFIGURATION
+**GET CONFIGURATION**
 
 #####GET - http://localhost:3000/api/configurations
 
@@ -24,7 +24,7 @@ GET CONFIGURATION
 
 #####HEADERS - token: ${token from login}
 
-CREATE CONFIGURATION
+**CREATE CONFIGURATION**
 
 #####POST - http://localhost:3000/api/configurations
 
@@ -37,7 +37,7 @@ CREATE CONFIGURATION
 
 #####HEADERS - token: ${token from login}
 
-UPDATE CONFIGURATION
+**UPDATE CONFIGURATION**
 
 #####PUT - http://localhost:3000/api/configurations
 
@@ -52,7 +52,7 @@ UPDATE CONFIGURATION
 
 #####HEADERS - token: ${token from login}
 
-DELETE CONFIGURATION 
+**DELETE CONFIGURATION**
 
 #####DELETE - http://localhost:3000/api/configurations
 
@@ -60,6 +60,6 @@ DELETE CONFIGURATION
 
 #####HEADERS - token: ${token from login}
 
-LOGOUT
+**LOGOUT**
 
 #####HEADERS - token: ${token from login}
