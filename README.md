@@ -7,59 +7,59 @@ Node API:
 
 LOGIN (user login token in header for all subsequent api calls)
 
-   POST - http://localhost:3000/api/login
+#####POST - http://localhost:3000/api/login
 
-   Body: {
+#####Body: {
             "username":"sam",
             "password":"123456"
          }
 
 GET CONFIGURATION
 
-   GET - http://localhost:3000/api/configurations
+#####GET - http://localhost:3000/api/configurations
 
-   PARAMS - limit (NUMBER): Amount of json objects to return 
+#####PARAMS - limit (NUMBER): Amount of json objects to return 
             offset (NUMBER): index for where the pagination should start
             sort (configuration property e.g: hostname) - sort returned data base on property  
 
-   HEADERS - token: ${token from login}
+#####HEADERS - token: ${token from login}
 
 CREATE CONFIGURATION
 
-   POST - http://localhost:3000/api/configurations
+#####POST - http://localhost:3000/api/configurations
 
-   BODY: {
+#####BODY: {
             "name":"ippudo",
             "hostname": "www.simhuang.com",
             "port":3454,
             "username":"express"
          }
 
-   HEADERS - token: ${token from login}
+#####HEADERS - token: ${token from login}
 
 UPDATE CONFIGURATION
 
-   PUT - http://localhost:3000/api/configurations
+#####PUT - http://localhost:3000/api/configurations
 
-   PARAMS - id (REQUIRED) - id associated with a json data object 
+#####PARAMS - id (REQUIRED) - id associated with a json data object 
 
-   BODY: {
+#####BODY: {
             "name":"ippudo",
             "hostname": "www.simhuang.com",
             "port":3454,
             "username":"elixer"
          }
 
-   HEADERS - token: ${token from login}
+#####HEADERS - token: ${token from login}
 
 DELETE CONFIGURATION 
 
-   DELETE - http://localhost:3000/api/configurations
+#####DELETE - http://localhost:3000/api/configurations
 
-   PARAMS - id (REQUIRED) - id associated with a json data object for deletion
+#####PARAMS - id (REQUIRED) - id associated with a json data object for deletion
 
-   HEADERS - token: ${token from login}
+#####HEADERS - token: ${token from login}
 
 LOGOUT
 
-   HEADERS - token: ${token from login}
+#####HEADERS - token: ${token from login}
